@@ -117,3 +117,18 @@
 2025-04-26 22:44:52.188 +03:00 [INF] Hosting environment: Development
 2025-04-26 22:44:52.188 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
 2025-04-26 22:45:06.490 +03:00 [INF] Application is shutting down...
+2025-04-26 23:05:08.307 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-26 23:05:08.456 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-26 23:05:08.458 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 23:05:08.459 +03:00 [INF] Hosting environment: Development
+2025-04-26 23:05:08.459 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-26 23:05:12.523 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-26 23:05:12.634 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 113.4741ms
+2025-04-26 23:05:12.770 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+2025-04-26 23:05:12.792 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 21.954ms
+2025-04-26 23:05:12.953 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2025-04-26 23:05:12.964 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-26 23:05:12.964 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 499 628 image/png 11.481ms
+2025-04-26 23:05:12.984 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-26 23:05:13.156 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.1666ms
+2025-04-26 23:05:40.450 +03:00 [INF] Application is shutting down...

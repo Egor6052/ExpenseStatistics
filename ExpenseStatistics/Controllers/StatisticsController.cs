@@ -17,31 +17,28 @@ namespace ExpenseStatistics.Controllers
             _statisticsService = statisticsService;
         }
 
+        // Отримання зведеної фінансової статистики
         [HttpGet("summary")]
         public async Task<IActionResult> GetSummary([FromQuery] DateTime? startDate, [FromQuery] DateTime? endDate)
         {
             var userId = GetUserId();
             var summary = await _statisticsService.GetSummaryAsync(userId, startDate, endDate);
-            var detailedStats = await _statisticsService.GetDetailedAsync(userId, startDate, endDate);
-
             return Ok(summary);
         }
 
-
+        // Отримання детальної фінансової статистики
         [HttpGet("detailed")]
         public async Task<IActionResult> GetDetailed([FromQuery] DateTime? startDate, [FromQuery] DateTime? endDate)
         {
-            var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new InvalidOperationException("User ID not found"));
+            var userId = GetUserId();
             var detailedStats = await _statisticsService.GetDetailedAsync(userId, startDate, endDate);
-
             return Ok(detailedStats);
         }
 
-
+        // Отримання ID користувача з токена
         private Guid GetUserId()
         {
-            return Guid.Parse(User.FindFirst("id")?.Value ?? throw new Exception("User ID not found"));
+            return Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new InvalidOperationException("User ID not found"));
         }
-
     }
 }

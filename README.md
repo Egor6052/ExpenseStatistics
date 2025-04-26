@@ -85,7 +85,7 @@ Adding to the system services:
 brew services start postgresql@16
 ```
 
-
+---
 ### API 
 ```sh
 http://localhost:5000/swagger/index.html
