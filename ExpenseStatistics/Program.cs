@@ -2,10 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Mvc;
 using Serilog;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Text;
-using FluentValidation; // Оновлено для нових методів
+using FluentValidation;
 using AutoMapper;
 using ExpenseStatistics.DB;
 using ExpenseStatistics.Auth;
@@ -18,7 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger(); // Виправлено .Create на .CreateLogger()
+    .CreateLogger();
 builder.Host.UseSerilog();
 
 // БД (EF Core з PostgreSQL)
@@ -29,9 +30,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<TransactionService>();
 builder.Services.AddScoped<TransactionRepository>();
 builder.Services.AddScoped<JwtTokenGenerator>();
+builder.Services.AddScoped<CategoryService>();
+builder.Services.AddScoped<AuthService>();
 
-// Валідація (оновлено для FluentValidation 11+)
+
+// Валідація
 builder.Services.AddValidatorsFromAssemblyContaining<CreateTransactionDtoValidator>();
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = false;
+});
 
 // Мапінг
 builder.Services.AddAutoMapper(typeof(Program));

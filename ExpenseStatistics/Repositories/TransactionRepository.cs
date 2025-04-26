@@ -27,5 +27,18 @@ namespace ExpenseStatistics.Repositories
                 .FirstOrDefaultAsync()
                 ?? throw new Exception("Transaction not found");
         }
+        public async Task<List<Transaction>> GetByUserIdAsync(Guid userId, DateTime? startDate = null, DateTime? endDate = null)
+        {
+            var query = _context.Transactions.Where(t => t.UserId == userId);
+
+            if (startDate.HasValue)
+                query = query.Where(t => t.Date >= startDate.Value);
+
+            if (endDate.HasValue)
+                query = query.Where(t => t.Date <= endDate.Value);
+
+            return await query.ToListAsync();
+        }
+
     }
 }
