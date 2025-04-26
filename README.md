@@ -146,96 +146,109 @@ List of relations
 | public | Users                  | table | postgres |
 | public | __EFMigrationsHistory  | table | postgres |
 
+If you hav problems with Transactions table, yse:
+```
+DROP TABLE IF EXISTS public."Transactions";
+```
+and
+```
+CREATE TABLE public."Transactions" (
+    TransactionId SERIAL PRIMARY KEY,
+    UserId uuid NOT NULL,
+    CategoryId uuid NOT NULL,
+    Amount DECIMAL(10, 2) NOT NULL,
+    TransactionDate TIMESTAMP NOT NULL,
+    Description VARCHAR(255),
+    FOREIGN KEY (UserId) REFERENCES public."Users"("Id"),
+    FOREIGN KEY (CategoryId) REFERENCES public."Categories"("Id")
+);
+```
 
 ---
 ### Test SQL scripts with data
 
 Test data for the table **Categories**:
 ```sh
-INSERT INTO public.Categories (Name)
+INSERT INTO public."Categories" ("Id", "Name", "UserId")
 VALUES
-('Food'),
-('Transport'),
-('Entertainment'),
-('Health'),
-('Utilities'),
-('Education'),
-('Shopping'),
-('Travel'),
-('Rent'),
-('Salary');
+  (gen_random_uuid(), 'Food', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 0)),
+  (gen_random_uuid(), 'Transport', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 1)),
+  (gen_random_uuid(), 'Entertainment', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSE 2)),
+  (gen_random_uuid(), 'Health', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 3)),
+  (gen_random_uuid(), 'Utilities', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 4)),
+  (gen_random_uuid(), 'Education', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 5)),
+  (gen_random_uuid(), 'Shopping', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 6)),
+  (gen_random_uuid(), 'Travel', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 7)),
+  (gen_random_uuid(), 'Rent', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 8)),
+  (gen_random_uuid(), 'Salary', (SELECT "Id" FROM public."Users" LIMIT 1 OFFSET 9));
+
 ```
 Test data for the **Users** table:
 ```sh
-INSERT INTO public.Users (Username, Email, PasswordHash, CreatedAt)
+INSERT INTO public."Users" ("Id", "Email", "PasswordHash", "CreatedAt")
 VALUES
-('john_doe', 'john.doe@example.com', 'hashed_password_123', '2025-04-26 10:00:00'),
-('jane_smith', 'jane.smith@example.com', 'hashed_password_456', '2025-04-26 10:05:00'),
-('admin', 'admin@example.com', 'hashed_password_789', '2025-04-26 10:10:00'),
-('mike_jones', 'mike.jones@example.com', 'hashed_password_101', '2025-04-26 10:15:00'),
-('susan_lee', 'susan.lee@example.com', 'hashed_password_202', '2025-04-26 10:20:00'),
-('emily_wang', 'emily.wang@example.com', 'hashed_password_303', '2025-04-26 10:25:00');
+    (gen_random_uuid(), 'user3@example.com', 'hashedpassword3', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user4@example.com', 'hashedpassword4', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user5@example.com', 'hashedpassword5', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user6@example.com', 'hashedpassword6', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user7@example.com', 'hashedpassword7', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user8@example.com', 'hashedpassword8', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user9@example.com', 'hashedpassword9', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user10@example.com', 'hashedpassword10', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user11@example.com', 'hashedpassword11', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user12@example.com', 'hashedpassword12', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user13@example.com', 'hashedpassword13', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user14@example.com', 'hashedpassword14', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user15@example.com', 'hashedpassword15', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user16@example.com', 'hashedpassword16', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user17@example.com', 'hashedpassword17', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user18@example.com', 'hashedpassword18', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user19@example.com', 'hashedpassword19', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user20@example.com', 'hashedpassword20', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user21@example.com', 'hashedpassword21', CURRENT_TIMESTAMP),
+    (gen_random_uuid(), 'user22@example.com', 'hashedpassword22', CURRENT_TIMESTAMP);
 ```
 
 Test data for the **Transactions** table:
 ```sh
--- User 1 (user0)
+-- User 1 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
-(1, 1, 50.00, '2025-04-25 12:00:00', 'Groceries'),
-(1, 2, 20.00, '2025-04-25 14:30:00', 'Bus ticket'),
-(1, 3, 100.00, '2025-04-26 08:00:00', 'Cinema'),
-(1, 4, 200.00, '2025-04-26 10:00:00', 'Medical consultation'),
-(1, 5, 60.00, '2025-04-26 11:00:00', 'Electricity bill'),
-(1, 6, 150.00, '2025-04-26 12:00:00', 'Online course'),
-(1, 7, 120.00, '2025-04-26 13:00:00', 'Clothing'),
-(1, 8, 500.00, '2025-04-26 14:00:00', 'Vacation expenses');
+(gen_random_uuid(), gen_random_uuid(), 120.00, '2025-04-25 16:00:00', 'Coffee with friends'),
+(gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-26 09:00:00', 'Restaurant dinner'),
+(gen_random_uuid(), gen_random_uuid(), 220.00, '2025-04-26 14:00:00', 'Online shopping');
 
--- User 2 (user1)
+-- User 2 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
-(2, 1, 35.00, '2025-04-25 13:30:00', 'Groceries'),
-(2, 2, 15.00, '2025-04-25 15:30:00', 'Train ticket'),
-(2, 3, 120.00, '2025-04-26 08:30:00', 'Movie tickets'),
-(2, 4, 250.00, '2025-04-26 09:00:00', 'Doctor visit'),
-(2, 5, 70.00, '2025-04-26 11:30:00', 'Water bill'),
-(2, 6, 200.00, '2025-04-26 12:30:00', 'Language course'),
-(2, 7, 80.00, '2025-04-26 13:30:00', 'Electronics'),
-(2, 8, 600.00, '2025-04-26 14:30:00', 'Holiday trip');
+(gen_random_uuid(), gen_random_uuid(), 80.00, '2025-04-25 17:30:00', 'Taxi ride to the airport'),
+(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-26 10:00:00', 'Hotel booking'),
+(gen_random_uuid(), gen_random_uuid(), 150.00, '2025-04-26 13:00:00', 'Excursion tickets');
 
--- User 3 (admin)
+-- User 3 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
-(3, 1, 45.00, '2025-04-25 14:00:00', 'Snacks and drinks'),
-(3, 2, 25.00, '2025-04-25 16:00:00', 'Taxi ride'),
-(3, 3, 150.00, '2025-04-26 09:00:00', 'Concert tickets'),
-(3, 4, 180.00, '2025-04-26 10:30:00', 'Medical checkup'),
-(3, 5, 65.00, '2025-04-26 12:00:00', 'Gas bill'),
-(3, 6, 120.00, '2025-04-26 13:00:00', 'Fitness class'),
-(3, 7, 100.00, '2025-04-26 14:00:00', 'Shopping online'),
-(3, 8, 550.00, '2025-04-26 15:00:00', 'Business trip');
+(gen_random_uuid(), gen_random_uuid(), 75.00, '2025-04-25 11:00:00', 'Lunch with colleagues'),
+(gen_random_uuid(), gen_random_uuid(), 400.00, '2025-04-26 10:30:00', 'Car repair'),
+(gen_random_uuid(), gen_random_uuid(), 300.00, '2025-04-26 15:30:00', 'Flight tickets');
 
--- User 4 (user2)
+-- User 4 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
-(4, 1, 60.00, '2025-04-25 10:00:00', 'Supermarket'),
-(4, 2, 18.00, '2025-04-25 12:00:00', 'Subway pass'),
-(4, 3, 130.00, '2025-04-26 09:00:00', 'Theater play'),
-(4, 4, 250.00, '2025-04-26 10:00:00', 'Dentist visit'),
-(4, 5, 55.00, '2025-04-26 11:00:00', 'Phone bill'),
-(4, 6, 180.00, '2025-04-26 12:00:00', 'Cooking class'),
-(4, 7, 90.00, '2025-04-26 13:00:00', 'Home appliances'),
-(4, 8, 700.00, '2025-04-26 14:00:00', 'Travel insurance');
+(gen_random_uuid(), gen_random_uuid(), 95.00, '2025-04-25 14:30:00', 'Books for studying'),
+(gen_random_uuid(), gen_random_uuid(), 180.00, '2025-04-26 08:00:00', 'Fitness subscription'),
+(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-26 11:30:00', 'Shopping spree');
 
--- User 5 (user3)
+-- User 5 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
-(5, 1, 55.00, '2025-04-25 13:00:00', 'Vegetables'),
-(5, 2, 22.00, '2025-04-25 15:00:00', 'Taxi ride'),
-(5, 3, 140.00, '2025-04-26 09:30:00', 'Theme park tickets'),
-(5, 4, 200.00, '2025-04-26 10:00:00', 'Optician visit'),
-(5, 5, 75.00, '2025-04-26 12:30:00', 'Mobile bill'),
-(5, 6, 160.00, '2025-04-26 13:30:00', 'Yoga class'),
-(5, 7, 110.00, '2025-04-26 14:30:00', 'Furniture'),
-(5, 8, 650.00, '2025-04-26 15:30:00', 'Cruise trip');
+(gen_random_uuid(), gen_random_uuid(), 120.00, '2025-04-25 16:30:00', 'Concert tickets'),
+(gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-26 12:00:00', 'Spa treatment'),
+(gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-26 13:30:00', 'Weekend getaway');
+
+```
+
+You can see oll data in the table: 
+```sh
+SELECT * FROM public.Transactions;
 ```
