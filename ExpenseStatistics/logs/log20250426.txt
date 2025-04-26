@@ -15,3 +15,42 @@
 2025-04-26 16:54:32.526 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 5.176ms
 2025-04-26 16:54:32.527 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
 2025-04-26 16:55:37.668 +03:00 [INF] Application is shutting down...
+2025-04-26 16:59:37.779 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-26 16:59:37.916 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-26 16:59:37.918 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 16:59:37.919 +03:00 [INF] Hosting environment: Production
+2025-04-26 16:59:37.919 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-26 16:59:42.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2025-04-26 16:59:42.315 +03:00 [INF] HTTP GET /swagger responded 404 in 34.5755 ms
+2025-04-26 16:59:42.335 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 404 0 null 74.1188ms
+2025-04-26 16:59:42.342 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/swagger, Response status code: 404
+2025-04-26 17:00:05.225 +03:00 [INF] Application is shutting down...
+2025-04-26 17:01:03.576 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-26 17:01:03.764 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-26 17:01:03.766 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 17:01:03.766 +03:00 [INF] Hosting environment: Development
+2025-04-26 17:01:03.766 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-26 17:01:08.190 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2025-04-26 17:01:08.226 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 301 0 null 37.5473ms
+2025-04-26 17:01:08.245 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-26 17:01:08.306 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 60.4318ms
+2025-04-26 17:01:08.384 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.css - null null
+2025-04-26 17:01:08.385 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2025-04-26 17:01:08.391 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2025-04-26 17:01:08.391 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-26 17:01:08.393 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+2025-04-26 17:01:08.394 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 0.9665ms
+2025-04-26 17:01:08.402 +03:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-26 17:01:08.402 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.css - 200 202 text/css 18.1829ms
+2025-04-26 17:01:08.411 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-26 17:01:08.411 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-26 17:01:08.416 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 24.9709ms
+2025-04-26 17:01:08.416 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 152034 text/css 30.8383ms
+2025-04-26 17:01:08.425 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-26 17:01:08.426 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 34.8392ms
+2025-04-26 17:01:08.638 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2025-04-26 17:01:08.639 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-26 17:01:08.639 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 1.5344ms
+2025-04-26 17:01:08.673 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-26 17:01:08.807 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.4452ms
+2025-04-26 17:01:36.137 +03:00 [INF] Application is shutting down...

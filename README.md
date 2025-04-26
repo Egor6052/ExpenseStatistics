@@ -44,6 +44,10 @@ For run, going to the build directory cd ./ExpenseStatistics, and:
 ```sh
 dotnet run
 ```
+Or run from the environment:
+```sh
+ASPNETCORE_ENVIRONMENT=Development dotnet run
+```
 ---
 #### Installing SDK and runtime machine
 MacOS installing SDK:
