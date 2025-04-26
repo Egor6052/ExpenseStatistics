@@ -1,0 +1,15 @@
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/bin/Debug/net9.0/ExpenseStatistics
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/bin/Debug/net9.0/ExpenseStatistics.deps.json
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/bin/Debug/net9.0/ExpenseStatistics.runtimeconfig.json
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/bin/Debug/net9.0/ExpenseStatistics.dll
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/bin/Debug/net9.0/ExpenseStatistics.pdb
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.AssemblyInfoInputs.cache
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.AssemblyInfo.cs
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.csproj.CoreCompileInputs.cache
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.sourcelink.json
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.dll
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/refint/ExpenseStatistics.dll
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.pdb
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ExpenseStatistics.genruntimeconfig.cache
+/Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics/obj/Debug/net9.0/ref/ExpenseStatistics.dll
