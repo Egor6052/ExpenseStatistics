@@ -6,11 +6,12 @@
 **_Content:_**
 - [Task](#task-4)
 - [General requirements](#general-requirements)
+- [API](#api)
 - [Create app and build](#create-app-and-build)
 - [Installing SDK and runtime machine](#installing-sdk-and-runtime-machine)
 - [Managing PostgreSQL](#managing-postgresql)
 - [Creating user in DB and table](#creating-user-in-db-and-table)
-- [API](#api)
+- [Test SQL scripts with data](#test-sql-scripts-with-data)
 
 ---
 ### Task 4:
@@ -31,6 +32,13 @@ _**Будет плюсом:**_ авторизация(транзакции пр�
 ### General requirements
 https://docs.google.com/document/d/1z8VsEIK7fHzdaFKA2aUiP9kfheydpGkaO0p1NJZBc-Q/edit?tab=t.0
 ---
+---
+### API 
+```sh
+http://localhost:5000/swagger/index.html
+```
+
+
 
 ### Create app and build
 For creating app, use:
@@ -138,12 +146,6 @@ List of relations
 | public | Users                  | table | postgres |
 | public | __EFMigrationsHistory  | table | postgres |
 
----
-### API 
-```sh
-http://localhost:5000/swagger/index.html
-```
-
 
 ---
 ### Test SQL scripts with data
@@ -237,4 +239,3 @@ VALUES
 (5, 7, 110.00, '2025-04-26 14:30:00', 'Furniture'),
 (5, 8, 650.00, '2025-04-26 15:30:00', 'Cruise trip');
 ```
-
