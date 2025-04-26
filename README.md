@@ -216,35 +216,70 @@ INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, De
 VALUES
 (gen_random_uuid(), gen_random_uuid(), 120.00, '2025-04-25 16:00:00', 'Coffee with friends'),
 (gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-26 09:00:00', 'Restaurant dinner'),
-(gen_random_uuid(), gen_random_uuid(), 220.00, '2025-04-26 14:00:00', 'Online shopping');
+(gen_random_uuid(), gen_random_uuid(), 220.00, '2025-04-26 14:00:00', 'Online shopping'),
+(gen_random_uuid(), gen_random_uuid(), 300.00, '2025-04-26 16:00:00', 'New phone'),
+(gen_random_uuid(), gen_random_uuid(), 180.00, '2025-04-27 09:00:00', 'Weekend trip'),
+(gen_random_uuid(), gen_random_uuid(), 90.00, '2025-04-27 12:00:00', 'Book purchase'),
+(gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-27 15:00:00', 'Home renovation'),
+(gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-28 10:00:00', 'Grocery shopping'),
+(gen_random_uuid(), gen_random_uuid(), 400.00, '2025-04-28 13:30:00', 'Concert tickets'),
+(gen_random_uuid(), gen_random_uuid(), 600.00, '2025-04-28 16:00:00', 'Travel expenses');
 
 -- User 2 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
 (gen_random_uuid(), gen_random_uuid(), 80.00, '2025-04-25 17:30:00', 'Taxi ride to the airport'),
 (gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-26 10:00:00', 'Hotel booking'),
-(gen_random_uuid(), gen_random_uuid(), 150.00, '2025-04-26 13:00:00', 'Excursion tickets');
+(gen_random_uuid(), gen_random_uuid(), 150.00, '2025-04-26 13:00:00', 'Excursion tickets'),
+(gen_random_uuid(), gen_random_uuid(), 400.00, '2025-04-26 16:00:00', 'Luggage purchase'),
+(gen_random_uuid(), gen_random_uuid(), 100.00, '2025-04-27 09:00:00', 'Airport food'),
+(gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-27 12:30:00', 'Museum tickets'),
+(gen_random_uuid(), gen_random_uuid(), 120.00, '2025-04-27 15:30:00', 'Taxi ride from airport'),
+(gen_random_uuid(), gen_random_uuid(), 600.00, '2025-04-28 08:00:00', 'Travel insurance'),
+(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-28 11:00:00', 'Hotel dinner'),
+(gen_random_uuid(), gen_random_uuid(), 700.00, '2025-04-28 14:00:00', 'Luxury tour');
 
 -- User 3 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
 (gen_random_uuid(), gen_random_uuid(), 75.00, '2025-04-25 11:00:00', 'Lunch with colleagues'),
 (gen_random_uuid(), gen_random_uuid(), 400.00, '2025-04-26 10:30:00', 'Car repair'),
-(gen_random_uuid(), gen_random_uuid(), 300.00, '2025-04-26 15:30:00', 'Flight tickets');
+(gen_random_uuid(), gen_random_uuid(), 300.00, '2025-04-26 15:30:00', 'Flight tickets'),
+(gen_random_uuid(), gen_random_uuid(), 150.00, '2025-04-27 10:00:00', 'Business lunch'),
+(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-27 13:00:00', 'Laptop purchase'),
+(gen_random_uuid(), gen_random_uuid(), 200.00, '2025-04-27 16:00:00', 'Gasoline refill'),
+(gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-28 09:00:00', 'Electronics shopping'),
+(gen_random_uuid(), gen_random_uuid(), 100.00, '2025-04-28 12:00:00', 'Gift purchase'),
+(gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-28 14:30:00', 'Dining out'),
+(gen_random_uuid(), gen_random_uuid(), 450.00, '2025-04-28 16:00:00', 'Weekend vacation');
 
 -- User 4 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
 (gen_random_uuid(), gen_random_uuid(), 95.00, '2025-04-25 14:30:00', 'Books for studying'),
 (gen_random_uuid(), gen_random_uuid(), 180.00, '2025-04-26 08:00:00', 'Fitness subscription'),
-(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-26 11:30:00', 'Shopping spree');
+(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-26 11:30:00', 'Shopping spree'),
+(gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-27 09:00:00', 'Gadgets'),
+(gen_random_uuid(), gen_random_uuid(), 100.00, '2025-04-27 12:00:00', 'Lunch with friends'),
+(gen_random_uuid(), gen_random_uuid(), 300.00, '2025-04-27 14:30:00', 'Clothing shopping'),
+(gen_random_uuid(), gen_random_uuid(), 150.00, '2025-04-28 08:00:00', 'Health insurance'),
+(gen_random_uuid(), gen_random_uuid(), 80.00, '2025-04-28 11:00:00', 'Movies'),
+(gen_random_uuid(), gen_random_uuid(), 400.00, '2025-04-28 13:30:00', 'Electronics shopping'),
+(gen_random_uuid(), gen_random_uuid(), 550.00, '2025-04-28 16:00:00', 'Vacation package');
 
 -- User 5 transactions
 INSERT INTO public.Transactions (UserId, CategoryId, Amount, TransactionDate, Description)
 VALUES
 (gen_random_uuid(), gen_random_uuid(), 120.00, '2025-04-25 16:30:00', 'Concert tickets'),
 (gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-26 12:00:00', 'Spa treatment'),
-(gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-26 13:30:00', 'Weekend getaway');
+(gen_random_uuid(), gen_random_uuid(), 350.00, '2025-04-26 13:30:00', 'Weekend getaway'),
+(gen_random_uuid(), gen_random_uuid(), 100.00, '2025-04-27 09:30:00', 'Gift shopping'),
+(gen_random_uuid(), gen_random_uuid(), 200.00, '2025-04-27 12:00:00', 'Dinner at restaurant'),
+(gen_random_uuid(), gen_random_uuid(), 150.00, '2025-04-27 14:30:00', 'Movie tickets'),
+(gen_random_uuid(), gen_random_uuid(), 500.00, '2025-04-28 09:00:00', 'Flight booking'),
+(gen_random_uuid(), gen_random_uuid(), 120.00, '2025-04-28 11:30:00', 'Concert tickets'),
+(gen_random_uuid(), gen_random_uuid(), 250.00, '2025-04-28 13:00:00', 'Clothing purchase'),
+(gen_random_uuid(), gen_random_uuid(), 400.00, '2025-04-28 15:00:00', 'Luxury gift');
 
 ```
 
