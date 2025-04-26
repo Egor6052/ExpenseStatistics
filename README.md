@@ -9,6 +9,7 @@
 - [Create app and build](#create-app-and-build)
 - [Installing SDK and runtime machine](#installing-sdk-and-runtime-machine)
 - [Managing PostgreSQL](#managing-postgresql)
+- [API](#api)
 
 ---
 ### Task 4:
@@ -82,4 +83,10 @@ source ~/.zshrc
 Adding to the system services:
 ```sh
 brew services start postgresql@16
+```
+
+
+### API 
+```sh
+http://localhost:5000/swagger/index.html
 ```
