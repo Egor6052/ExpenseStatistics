@@ -22,17 +22,16 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 builder.Host.UseSerilog();
 
-// БД (EF Core з PostgreSQL)
+// Підключення БД (EF Core + PostgreSQL)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Сервіси
+// Реєстрація сервісів
 builder.Services.AddScoped<TransactionService>();
 builder.Services.AddScoped<TransactionRepository>();
 builder.Services.AddScoped<JwtTokenGenerator>();
 builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<AuthService>();
-
 
 // Валідація
 builder.Services.AddValidatorsFromAssemblyContaining<CreateTransactionDtoValidator>();
@@ -41,13 +40,13 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
     options.SuppressModelStateInvalidFilter = false;
 });
 
-// Мапінг
+// Мапінг (AutoMapper)
 builder.Services.AddAutoMapper(typeof(Program));
 
 // Кешування
 builder.Services.AddMemoryCache();
 
-// Авторизація (JWT)
+// Аутентифікація та Авторизація (JWT)
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -60,29 +59,36 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("Jwt:Key is missing")))
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] 
+                ?? throw new InvalidOperationException("Jwt:Key is missing")))
         };
     });
 
-// Контролери
+//  Контролери 
 builder.Services.AddControllers()
     .AddNewtonsoftJson();
 
-// Swagger
+//  Swagger (API документація) 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+// Логування HTTP-запитів
 app.UseSerilogRequestLogging();
+
+// Перевірка токену користувача
 app.UseAuthentication();
+// Перевірка прав доступу
 app.UseAuthorization();
+// Підключення контролерів
 app.MapControllers();
 
 app.Run();
