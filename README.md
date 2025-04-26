@@ -1,4 +1,4 @@
-# 📈 ExpenseStatistics
+# ExpenseStatistics
 
 **ExpenseStatistics** — програма для швидкого аналізу витрат та фінансової статистики.
 
