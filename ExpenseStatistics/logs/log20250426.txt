@@ -1,0 +1,17 @@
+2025-04-26 16:53:57.834 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-26 16:53:57.963 +03:00 [INF] Creating key {10175a85-79b9-4e8a-ae44-2d135be72471} with creation date 2025-04-26 13:53:57Z, activation date 2025-04-26 13:53:57Z, and expiration date 2025-07-25 13:53:57Z.
+2025-04-26 16:53:57.998 +03:00 [WRN] No XML encryptor configured. Key {10175a85-79b9-4e8a-ae44-2d135be72471} may be persisted to storage in unencrypted form.
+2025-04-26 16:53:58.003 +03:00 [INF] Writing data to file '/Users/mac/.aspnet/DataProtection-Keys/key-10175a85-79b9-4e8a-ae44-2d135be72471.xml'.
+2025-04-26 16:53:58.039 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-26 16:53:58.041 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-26 16:53:58.041 +03:00 [INF] Hosting environment: Production
+2025-04-26 16:53:58.042 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-26 16:54:30.928 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-04-26 16:54:31.010 +03:00 [INF] HTTP GET / responded 404 in 61.8295 ms
+2025-04-26 16:54:31.033 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 106.0516ms
+2025-04-26 16:54:31.043 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2025-04-26 16:54:32.521 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-04-26 16:54:32.525 +03:00 [INF] HTTP GET / responded 404 in 2.3233 ms
+2025-04-26 16:54:32.526 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 404 0 null 5.176ms
+2025-04-26 16:54:32.527 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/, Response status code: 404
+2025-04-26 16:55:37.668 +03:00 [INF] Application is shutting down...
