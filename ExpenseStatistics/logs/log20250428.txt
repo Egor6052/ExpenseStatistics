@@ -137,3 +137,99 @@
 2025-04-28 11:25:22.251 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
 2025-04-28 11:25:22.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 160.5733ms
 2025-04-28 11:27:30.784 +03:00 [INF] Application is shutting down...
+2025-04-28 11:29:10.937 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:29:11.064 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:29:11.066 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:29:11.066 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:29:11.067 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:29:32.754 +03:00 [INF] Application is shutting down...
+2025-04-28 11:30:56.098 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:30:56.228 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:30:56.230 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:30:56.230 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:30:56.230 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:30:59.541 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html - null null
+2025-04-28 11:30:59.655 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.html - 200 null text/html;charset=utf-8 115.1005ms
+2025-04-28 11:30:59.917 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon-16x16.png - null null
+2025-04-28 11:30:59.928 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-04-28 11:30:59.929 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon-16x16.png - 499 665 image/png 12.2299ms
+2025-04-28 11:30:59.953 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:31:00.113 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 160.611ms
+2025-04-28 11:33:12.412 +03:00 [INF] Application is shutting down...
+2025-04-28 11:33:26.240 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:33:26.441 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:33:26.443 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:33:26.443 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:33:26.444 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:33:27.952 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html - null null
+2025-04-28 11:33:28.055 +03:00 [INF] HTTP GET /index.html responded 404 in 55.4071 ms
+2025-04-28 11:33:28.069 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.html - 404 0 null 119.6431ms
+2025-04-28 11:33:28.077 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/index.html, Response status code: 404
+2025-04-28 11:33:35.952 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-28 11:33:36.024 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 71.6839ms
+2025-04-28 11:33:36.222 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:33:36.361 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 139.33ms
+2025-04-28 11:34:48.892 +03:00 [INF] Application is shutting down...
+2025-04-28 11:35:48.797 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:35:48.927 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:35:48.928 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:35:48.929 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:35:48.929 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:36:01.567 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-28 11:36:01.684 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 118.4589ms
+2025-04-28 11:36:01.850 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:36:01.986 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.5951ms
+2025-04-28 11:38:13.001 +03:00 [INF] Application is shutting down...
+2025-04-28 11:38:21.980 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:38:22.100 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:38:22.102 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:38:22.103 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:38:22.103 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:38:24.979 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-28 11:38:25.085 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 107.0361ms
+2025-04-28 11:38:25.140 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+2025-04-28 11:38:25.148 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 8.8367ms
+2025-04-28 11:38:25.281 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:38:25.419 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.0523ms
+2025-04-28 11:38:35.361 +03:00 [INF] Application is shutting down...
+2025-04-28 11:38:41.472 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:38:41.593 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:38:41.595 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:38:41.595 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:38:41.595 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:38:43.311 +03:00 [INF] Application is shutting down...
+2025-04-28 11:38:53.684 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:38:53.801 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:38:53.803 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:38:53.803 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:38:53.803 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:38:57.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-28 11:38:57.840 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 100.575ms
+2025-04-28 11:38:57.996 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:38:58.132 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.2806ms
+2025-04-28 11:39:17.472 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-28 11:39:17.474 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 2.0365ms
+2025-04-28 11:39:17.634 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:39:17.643 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4107ms
+2025-04-28 11:39:19.635 +03:00 [INF] Application is shutting down...
+2025-04-28 11:39:29.380 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:39:29.501 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:39:29.503 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:39:29.504 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:39:29.504 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:39:32.093 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-04-28 11:39:32.176 +03:00 [INF] HTTP GET /swagger/index.html responded 404 in 41.3468 ms
+2025-04-28 11:39:32.189 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 404 0 null 97.6087ms
+2025-04-28 11:39:32.196 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/swagger/index.html, Response status code: 404
+2025-04-28 11:39:40.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - null null
+2025-04-28 11:39:40.588 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - 301 0 null 3.1514ms
+2025-04-28 11:39:40.598 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html - null null
+2025-04-28 11:39:40.666 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.html - 200 null text/html;charset=utf-8 67.7577ms
+2025-04-28 11:39:40.718 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger-ui-standalone-preset.js - null null
+2025-04-28 11:39:40.719 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.js - null null
+2025-04-28 11:39:40.720 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.js - 200 null application/javascript;charset=utf-8 1.1776ms
+2025-04-28 11:39:40.740 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-28 11:39:40.740 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger-ui-standalone-preset.js - 499 229223 text/javascript 22.6989ms
+2025-04-28 11:39:40.969 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:39:41.119 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.3634ms
+2025-04-28 11:39:56.310 +03:00 [INF] Application is shutting down...

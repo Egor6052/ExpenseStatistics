@@ -35,7 +35,7 @@ https://docs.google.com/document/d/1z8VsEIK7fHzdaFKA2aUiP9kfheydpGkaO0p1NJZBc-Q/
 ---
 ### API for testing
 ```sh
-http://localhost:5000/swagger/index.html
+http://localhost:5000/index.html
 ```
 
 
