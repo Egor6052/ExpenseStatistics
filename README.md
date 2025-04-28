@@ -33,9 +33,9 @@ _**Будет плюсом:**_ авторизация(транзакции пр�
 https://docs.google.com/document/d/1z8VsEIK7fHzdaFKA2aUiP9kfheydpGkaO0p1NJZBc-Q/edit?tab=t.0
 ---
 ---
-### API 
+### API for testing
 ```sh
-http://localhost:5000/swagger/index.html
+http://localhost:5000/
 ```
 
 

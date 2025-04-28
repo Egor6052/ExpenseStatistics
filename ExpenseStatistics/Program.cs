@@ -64,13 +64,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-//  Контролери 
+// Контролери
 builder.Services.AddControllers()
     .AddNewtonsoftJson();
 
-//  Swagger (API документація) 
+// Swagger (API документація)
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "ExpenseStatistics API",
+        Version = "v1"
+    });
+});
 
 var app = builder.Build();
 
@@ -78,7 +85,20 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ExpenseStatistics API v1");
+        c.RoutePrefix = string.Empty; // Swagger UI за адресою http://localhost:5000/
+    });
+}
+else
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ExpenseStatistics API v1");
+        c.RoutePrefix = string.Empty; // Swagger UI за адресою http://localhost:5000/
+    });
 }
 
 // Логування HTTP-запитів

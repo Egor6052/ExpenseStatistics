@@ -21,26 +21,28 @@ namespace ExpenseStatistics.Controllers
             _mapper = mapper;
         }
 
+        // Створення нової категорії
         [HttpPost]
-        public async Task<IActionResult> Create(CreateCategoryDto dto)
+        public async Task<IActionResult> Create([FromBody] CreateCategoryDto dto)
         {
             var userId = GetUserId();
             var category = await _categoryService.CreateAsync(dto.Name, userId);
             return Ok(category);
         }
 
-
+        // Отримання всіх категорій користувача
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new InvalidOperationException("User ID not found"));
+            var userId = GetUserId();
             var categories = await _categoryService.GetAllAsync(userId);
             return Ok(categories);
         }
+
+        // Метод для безпечного отримання ID користувача з токена
         private Guid GetUserId()
         {
-            return Guid.Parse(User.FindFirst("id")?.Value ?? throw new Exception("User ID not found"));
+            return Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new InvalidOperationException("User ID not found"));
         }
-
     }
 }
