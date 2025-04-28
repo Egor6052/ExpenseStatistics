@@ -6,7 +6,7 @@
 **_Content:_**
 - [Task](#task-4)
 - [General requirements](#general-requirements)
-- [API](#api)
+- [API](#api-for-testing)
 - [Create app and build](#create-app-and-build)
 - [Installing SDK and runtime machine](#installing-sdk-and-runtime-machine)
 - [Managing PostgreSQL](#managing-postgresql)
