@@ -88,3 +88,52 @@
 2025-04-28 11:09:57.325 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
 2025-04-28 11:09:57.510 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 185.5186ms
 2025-04-28 11:10:46.223 +03:00 [INF] Application is shutting down...
+2025-04-28 11:12:43.278 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:12:43.497 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:12:43.499 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:12:43.500 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:12:43.501 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:14:18.793 +03:00 [INF] Application is shutting down...
+2025-04-28 11:14:28.187 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:14:28.317 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:14:28.319 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:14:28.319 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:14:28.320 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:16:17.465 +03:00 [INF] Application is shutting down...
+2025-04-28 11:16:32.517 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:16:32.650 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:16:32.652 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:16:32.652 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:16:32.652 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:17:42.999 +03:00 [INF] Application is shutting down...
+2025-04-28 11:17:50.337 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:17:50.461 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:17:50.463 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:17:50.463 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:17:50.464 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:19:17.953 +03:00 [INF] Application is shutting down...
+2025-04-28 11:19:27.439 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:19:27.584 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:19:27.586 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:19:27.586 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:19:27.586 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:20:58.252 +03:00 [INF] Application is shutting down...
+2025-04-28 11:21:16.849 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:21:16.980 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:21:16.982 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:21:16.982 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:21:16.982 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:21:28.025 +03:00 [INF] Application is shutting down...
+2025-04-28 11:25:17.352 +03:00 [INF] User profile is available. Using '/Users/mac/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-04-28 11:25:17.510 +03:00 [INF] Now listening on: http://localhost:5000
+2025-04-28 11:25:17.512 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 11:25:17.512 +03:00 [INF] Hosting environment: Production
+2025-04-28 11:25:17.512 +03:00 [INF] Content root path: /Users/mac/Documents/Учеба (все курсы)/4 Курс/4 курс 2 семестр/C#_Net/Modul/ExpenseStatistics/ExpenseStatistics
+2025-04-28 11:25:21.813 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/index.html - null null
+2025-04-28 11:25:21.942 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/index.html - 200 null text/html;charset=utf-8 130.6904ms
+2025-04-28 11:25:22.213 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon-16x16.png - null null
+2025-04-28 11:25:22.224 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2025-04-28 11:25:22.224 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon-16x16.png - 499 665 image/png 10.671ms
+2025-04-28 11:25:22.251 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-04-28 11:25:22.412 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 160.5733ms
+2025-04-28 11:27:30.784 +03:00 [INF] Application is shutting down...

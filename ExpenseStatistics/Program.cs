@@ -59,7 +59,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] 
+                Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]
                 ?? throw new InvalidOperationException("Jwt:Key is missing")))
         };
     });
@@ -81,14 +81,15 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
-// Middleware
-if (app.Environment.IsDevelopment())
+// Middleware для Swagger
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "ExpenseStatistics API v1");
-        c.RoutePrefix = string.Empty; // Swagger UI за адресою http://localhost:5000/
+        c.RoutePrefix = string.Empty;  
+        // Swagger UI за адресою http://localhost:5000/
     });
 }
 else
@@ -97,7 +98,8 @@ else
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "ExpenseStatistics API v1");
-        c.RoutePrefix = string.Empty; // Swagger UI за адресою http://localhost:5000/
+        c.RoutePrefix = string.Empty;  
+        //Swagger UI за адресою http://localhost:5000/
     });
 }
 
